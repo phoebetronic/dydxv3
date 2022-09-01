@@ -20,7 +20,7 @@ type User struct {
 	Account user.Account `json:"account"`
 }
 
-// User let's the caller onboard to the dYdX exchange by creating a new account
+// User lets the caller onboard to the dYdX exchange by creating a new account
 // for the underlying wallet.
 //
 //     signer.User(signer.Keyp())
