@@ -9,8 +9,9 @@ import (
 	"net/http"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/phoebetron/dydxv3/errors"
+	"github.com/phoebetron/dydxv3/signer/user"
 	"github.com/phoebetron/dydxv3/starkx/private"
-	"github.com/phoebetron/dydxv3/user"
 	"github.com/xh3b4sd/tracer"
 )
 
@@ -86,7 +87,7 @@ func (s *Signer) post(key *private.Key) (User, error) {
 		}
 	}
 
-	var lis Errors
+	var lis errors.Errors
 	{
 		err = json.Unmarshal(bod, &lis)
 		if err != nil {
