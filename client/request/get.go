@@ -6,5 +6,5 @@ import (
 )
 
 func (r *Request) Get(pat string, par url.Values) ([]byte, error) {
-	return r.request(http.MethodGet, GenerateQueryPath(pat, par), nil)
+	return r.request(http.MethodGet, Query(pat, par), nil)
 }
