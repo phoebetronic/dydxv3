@@ -16,10 +16,8 @@ type User struct {
 }
 
 type Account struct {
-	StarkKey     string    `json:"starkKey"`
-	CreatedAt    time.Time `json:"createdAt"`
-	MakerFeeRate string    `json:"makerFeeRate"`
-	TakerFeeRate string    `json:"takerFeeRate"`
+	StarkKey  string    `json:"starkKey"`
+	CreatedAt time.Time `json:"createdAt"`
 }
 
 type Request struct {

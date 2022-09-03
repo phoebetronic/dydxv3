@@ -1,4 +1,4 @@
-package signer
+package errors
 
 // Errors is used to identify error responses during the onboarding process. A
 // typical error may be an unfunded wallet that has just been created.
