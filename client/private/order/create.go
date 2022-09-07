@@ -2,6 +2,7 @@ package order
 
 import (
 	"encoding/json"
+	"strings"
 
 	"github.com/xh3b4sd/tracer"
 	"github.com/yanue/starkex"
@@ -11,7 +12,7 @@ func (o *O) Create(req CreateRequest) (CreateResponse, error) {
 	var err error
 
 	{
-		req.Signature, err = starkex.OrderSign(o.sec.StkPrk, o.sigpar(req))
+		req.Signature, err = starkex.OrderSign(strings.TrimPrefix(o.sec.StkPrk, "0x"), o.sigpar(req))
 		if err != nil {
 			return CreateResponse{}, tracer.Mask(err)
 		}
@@ -53,6 +54,6 @@ func (o *O) sigpar(req CreateRequest) starkex.OrderSignParam {
 		HumanPrice: req.Price,
 		LimitFee:   req.LimitFee,
 		ClientId:   req.ClientId,
-		Expiration: req.Expiration,
+		Expiration: req.Expiration.UTC().Format("2006-01-02T15:04:05.000Z"),
 	}
 }

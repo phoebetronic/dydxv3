@@ -1,6 +1,9 @@
 package fill
 
-import "time"
+import (
+	"strconv"
+	"time"
+)
 
 type Fill struct {
 	ID        string    `json:"id"`
@@ -13,6 +16,24 @@ type Fill struct {
 	Size      string    `json:"size"`
 	Fee       string    `json:"fee"`
 	CreatedAt time.Time `json:"createdAt"`
+}
+
+func (f Fill) Pri() float32 {
+	p, e := strconv.ParseFloat(f.Price, 32)
+	if e != nil {
+		panic(e)
+	}
+
+	return float32(p)
+}
+
+func (f Fill) Siz() float32 {
+	p, e := strconv.ParseFloat(f.Size, 32)
+	if e != nil {
+		panic(e)
+	}
+
+	return float32(p)
 }
 
 type Request struct {
