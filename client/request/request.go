@@ -72,7 +72,7 @@ func (r *Request) request(met string, pat string, dat interface{}) ([]byte, erro
 
 	var now string
 	{
-		now = time.Now().UTC().Format("2006-01-02T15:04:05.999Z")
+		now = time.Now().UTC().Format("2006-01-02T15:04:05.000Z")
 	}
 
 	{

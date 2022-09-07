@@ -14,20 +14,22 @@ func Query(url string, par url.Values) string {
 	return fmt.Sprintf("%s?%s", url, par.Encode())
 }
 
-func Values(val interface{}) url.Values {
-	var ele reflect.Value
+func Values(str interface{}) url.Values {
+	var val reflect.Value
 	{
-		ele = reflect.ValueOf(val).Elem()
+		val = reflect.ValueOf(str)
 	}
 
 	var typ reflect.Type
 	{
-		typ = ele.Type()
+		typ = val.Type()
 	}
 
-	var dic url.Values
-	for i := 0; i < ele.NumField(); i++ {
-		dic.Set(typ.Field(i).Name, fmt.Sprint(ele.Field(i)))
+	dic := url.Values{}
+	for i := 0; i < val.NumField(); i++ {
+		if !val.Field(i).IsZero() {
+			dic.Set(typ.Field(i).Name, fmt.Sprintf("%v", val.Field(i).Interface()))
+		}
 	}
 
 	return dic
