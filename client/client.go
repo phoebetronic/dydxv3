@@ -4,13 +4,14 @@ import (
 	"net/http"
 
 	"github.com/phoebetron/dydxv3/client/private"
+	"github.com/phoebetron/dydxv3/client/public"
 	"github.com/phoebetron/dydxv3/client/request"
 	"github.com/phoebetron/dydxv3/client/secret"
 )
 
 type Client struct {
 	Pri *private.Private
-	sec secret.Secret
+	Pub *public.Public
 }
 
 func New(con Config) *Client {
@@ -18,26 +19,33 @@ func New(con Config) *Client {
 		con.Verify()
 	}
 
-	var req *request.Request
-	{
-		req = request.New(request.Config{
-			Cli: &http.Client{},
+	var pri *private.Private
+	if con.Sec != (secret.Secret{}) {
+		pri = private.New(private.Config{
+			Req: request.New(request.Config{
+				Cli: &http.Client{},
+				Pri: true,
+				Sec: con.Sec,
+				Tes: con.Tes,
+			}),
 			Sec: con.Sec,
 			Tes: con.Tes,
 		})
 	}
 
-	var pri *private.Private
+	var pub *public.Public
 	{
-		pri = private.New(private.Config{
-			Req: req,
-			Sec: con.Sec,
+		pub = public.New(public.Config{
+			Req: request.New(request.Config{
+				Cli: &http.Client{},
+				Tes: con.Tes,
+			}),
 			Tes: con.Tes,
 		})
 	}
 
 	return &Client{
 		Pri: pri,
-		sec: con.Sec,
+		Pub: pub,
 	}
 }

@@ -8,6 +8,7 @@ import (
 
 type Config struct {
 	Cli *http.Client
+	Pri bool
 	Sec secret.Secret
 	Tes bool
 }
@@ -25,7 +26,7 @@ func (c Config) Verify() {
 		panic("Config.Cli must not be empty")
 	}
 
-	{
+	if c.Pri {
 		c.Sec.Verify()
 	}
 }
