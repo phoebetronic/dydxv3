@@ -15,6 +15,7 @@ import (
 
 type Request struct {
 	cli *http.Client
+	pri bool
 	sec secret.Secret
 	tes bool
 }
@@ -70,17 +71,22 @@ func (r *Request) request(met string, pat string, dat interface{}) ([]byte, erro
 		}
 	}
 
-	var now string
-	{
-		now = time.Now().UTC().Format("2006-01-02T15:04:05.000Z")
+	if dat != nil {
+		req.Header.Set("Content-Type", "application/json")
 	}
 
-	{
-		req.Header.Set("Content-Type", "application/json")
-		req.Header.Set("DYDX-SIGNATURE", r.sign(pat, met, now, bod))
-		req.Header.Set("DYDX-API-KEY", r.sec.ApiKey)
-		req.Header.Set("DYDX-TIMESTAMP", now)
-		req.Header.Set("DYDX-PASSPHRASE", r.sec.ApiPas)
+	if r.pri {
+		var now string
+		{
+			now = time.Now().UTC().Format("2006-01-02T15:04:05.000Z")
+		}
+
+		{
+			req.Header.Set("DYDX-SIGNATURE", r.sign(pat, met, now, bod))
+			req.Header.Set("DYDX-API-KEY", r.sec.ApiKey)
+			req.Header.Set("DYDX-TIMESTAMP", now)
+			req.Header.Set("DYDX-PASSPHRASE", r.sec.ApiPas)
+		}
 	}
 
 	var res *http.Response

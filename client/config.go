@@ -7,8 +7,4 @@ type Config struct {
 	Tes bool
 }
 
-func (c Config) Verify() {
-	{
-		c.Sec.Verify()
-	}
-}
+func (c Config) Verify() {}
