@@ -31,6 +31,7 @@ func New(con Config) *Request {
 
 	return &Request{
 		cli: con.Cli,
+		pri: con.Pri,
 		sec: con.Sec,
 		tes: con.Tes,
 	}
