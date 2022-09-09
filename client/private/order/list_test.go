@@ -14,7 +14,7 @@ func Test_Client_Private_Order_List_Request(t *testing.T) {
 	}
 
 	cur := request.Values(req).Encode()
-	des := "Market=ETH-USD&ReturnLatestOrders=true"
+	des := "market=ETH-USD&returnLatestOrders=true"
 
 	if cur != des {
 		t.Fatalf("\n\n%s\n", cmp.Diff(des, cur))

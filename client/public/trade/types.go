@@ -32,9 +32,9 @@ func (t Trade) Siz() float32 {
 }
 
 type ListRequest struct {
-	Market             string    `json:"-"`
-	Limit              int       `json:"limit"`
-	StartingBeforeOrAt time.Time `json:"startingBeforeOrAt"`
+	Market             string `json:"-"`
+	Limit              int    `json:"limit"`
+	StartingBeforeOrAt string `json:"startingBeforeOrAt"`
 }
 
 type ListResponse struct {

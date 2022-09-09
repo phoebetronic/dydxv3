@@ -28,7 +28,7 @@ func Values(str interface{}) url.Values {
 	dic := url.Values{}
 	for i := 0; i < val.NumField(); i++ {
 		if !val.Field(i).IsZero() && typ.Field(i).Tag.Get("json") != "-" {
-			dic.Set(typ.Field(i).Name, fmt.Sprintf("%v", val.Field(i).Interface()))
+			dic.Set(typ.Field(i).Tag.Get("json"), fmt.Sprintf("%v", val.Field(i).Interface()))
 		}
 	}
 
