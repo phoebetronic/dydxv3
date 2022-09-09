@@ -17,3 +17,13 @@ updates:
       interval: "daily"
       time: "04:00"
     target-branch: "main"
+
+  - package-ecosystem: "gomod"
+    directory: "/"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "xh3b4sd"
+    schedule:
+      interval: "daily"
+      time: "04:00"
+    target-branch: "main"

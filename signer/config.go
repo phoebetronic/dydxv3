@@ -1,7 +1,7 @@
 package signer
 
 import (
-	"github.com/phoebetron/wallet"
+	"github.com/phoebetron/wallet/pkg/wallet"
 )
 
 type Config struct {
