@@ -16,8 +16,10 @@ package main
 import (
 	"fmt"
 
+	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/phoebetron/dydxv3/signer"
-	"github.com/phoebetron/wallet"
+	"github.com/phoebetron/dydxv3/starkx/private"
+	"github.com/phoebetron/wallet/pkg/wallet"
 )
 
 func main() {
@@ -36,7 +38,18 @@ func main() {
 		use = sig.User(sig.Keyp())
 	}
 
-	fmt.Printf("%#v\n", use)
+	var key *private.Key
+	{
+		key = sig.Keyp()
+	}
+
+	fmt.Printf("stark private key                %s\n", hexutil.EncodeBig(key.Pri))
+	fmt.Printf("stark public key                 %s\n", hexutil.EncodeBig(key.Pub.X))
+	fmt.Printf("stark public key y coordinate    %s\n", hexutil.EncodeBig(key.Pub.Y))
+	fmt.Printf("ethereum address                 %s\n", use.User.EthereumAddress)
+	fmt.Printf("dydx api key                     %s\n", use.ApiKey.Key)
+	fmt.Printf("dydx api passphrase              %s\n", use.ApiKey.Passphrase)
+	fmt.Printf("dydx api secret                  %s\n", use.ApiKey.Secret)
 }
 ```
 
@@ -54,7 +67,7 @@ import (
 	"github.com/phoebetron/dydxv3/client/secret"
 	"github.com/phoebetron/dydxv3/signer"
 	"github.com/phoebetron/dydxv3/starkx/private"
-	"github.com/phoebetron/wallet"
+	"github.com/phoebetron/wallet/pkg/wallet"
 )
 
 func main() {
