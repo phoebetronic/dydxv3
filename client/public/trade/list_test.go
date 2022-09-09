@@ -14,7 +14,7 @@ func Test_Client_Public_Trade_List_Request(t *testing.T) {
 	}
 
 	cur := request.Values(req).Encode()
-	des := "Limit=1"
+	des := "limit=1"
 
 	if cur != des {
 		t.Fatalf("\n\n%s\n", cmp.Diff(des, cur))
