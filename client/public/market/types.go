@@ -53,10 +53,20 @@ func (m Market) MSS() float32 {
 	return float32(f)
 }
 
+// Pri returns the market's index price parsed from string to float.
+func (m Market) Pri() float32 {
+	f, e := strconv.ParseFloat(m.IndexPrice, 32)
+	if e != nil {
+		panic(e)
+	}
+
+	return float32(f)
+}
+
 type ListRequest struct {
 	Market string `json:"market,omitempty"`
 }
 
 type ListResponse struct {
-	Markets []Market `json:"markets"`
+	Markets map[string]Market `json:"markets"`
 }
