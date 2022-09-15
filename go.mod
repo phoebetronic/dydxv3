@@ -3,7 +3,7 @@ module github.com/phoebetron/dydxv3
 go 1.18
 
 require (
-	github.com/ethereum/go-ethereum v1.10.23
+	github.com/ethereum/go-ethereum v1.10.24
 	github.com/ethersphere/bee v1.8.0
 	github.com/go-numb/go-dydx v0.0.0-20220329194222-4f7ad846fde0
 	github.com/google/go-cmp v0.5.9
