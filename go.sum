@@ -103,8 +103,8 @@ github.com/valyala/fasthttp v1.4.0/go.mod h1:4vX61m6KN+xDduDNwXrhIAVZaZaZiQ1luJk
 github.com/valyala/fastjson v1.4.1 h1:hrltpHpIpkaxll8QltMU8c3QZ5+qIiCL8yKqPFJI/yE=
 github.com/valyala/fastjson v1.4.1/go.mod h1:nV6MsjxL2IMJQUoHDIrjEI7oLyeqK6aBD7EFWPsvP8o=
 github.com/valyala/tcplisten v0.0.0-20161114210144-ceec8f93295a/go.mod h1:v3UYOV9WzVtRmSR+PDvWpU/qWl4Wa5LApYYX4ZtKbio=
-github.com/xh3b4sd/tracer v0.5.1 h1:Y4639ve7PT+1MSiq0I3Yi7vOeJAYBKgzlSR68jA+SuI=
-github.com/xh3b4sd/tracer v0.5.1/go.mod h1:sYg6KI0svCEb2an8Hf0cYR0rOY94bIrN27TRsJi4+x4=
+github.com/xh3b4sd/tracer v0.6.0 h1:WMrNsHcWUaCAqMWXogD7IRKC8F6A9Ar4pDF9WcdZsX0=
+github.com/xh3b4sd/tracer v0.6.0/go.mod h1:U5gTjJXdszOlcBmr94v6zDrV8sY6d53thFUkPNZQ4Xk=
 github.com/yanue/starkex v0.0.0-20220816084859-199db002c96f h1:EBkD8u6WKxhQHzBWZcy0m2FD01VLOXUzOEtGSXyu7T8=
 github.com/yanue/starkex v0.0.0-20220816084859-199db002c96f/go.mod h1:Owc+hA2CxIsKGVgX6n/KIJtyXxJoAGNcHO+8iyL0J6A=
 golang.org/x/crypto v0.0.0-20170930174604-9419663f5a44/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
