@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/ethereum/go-ethereum v1.10.26
-	github.com/ethersphere/bee v1.9.0
+	github.com/ethersphere/bee v1.10.0
 	github.com/go-numb/go-dydx v0.0.0-20220329194222-4f7ad846fde0
 	github.com/google/go-cmp v0.5.9
 	github.com/miguelmota/go-solidity-sha3 v0.1.1
