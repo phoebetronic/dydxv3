@@ -17,8 +17,7 @@ type Apic struct {
 
 // Apic recovers the default API credentials of the underlying wallet.
 //
-//     https://docs.dydx.exchange/#recover-default-api-credentials
-//
+//	https://docs.dydx.exchange/#recover-default-api-credentials
 func (s *Signer) Apic() Apic {
 	sig := s.Sign("dYdX Onboarding")
 

@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"time"
 
@@ -101,7 +101,7 @@ func (r *Request) request(met string, pat string, dat interface{}) ([]byte, erro
 
 	var byt []byte
 	{
-		byt, err = ioutil.ReadAll(res.Body)
+		byt, err = io.ReadAll(res.Body)
 		if err != nil {
 			return nil, tracer.Mask(err)
 		}

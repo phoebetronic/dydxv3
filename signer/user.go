@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
@@ -24,8 +23,7 @@ type User struct {
 // User lets the caller onboard to the dYdX exchange by creating a new account
 // for the underlying wallet.
 //
-//     signer.User(signer.Keyp())
-//
+//	signer.User(signer.Keyp())
 func (s *Signer) User(key *private.Key) User {
 	var err error
 
@@ -81,7 +79,7 @@ func (s *Signer) post(key *private.Key) (User, error) {
 
 	var bod []byte
 	{
-		bod, err = ioutil.ReadAll(res.Body)
+		bod, err = io.ReadAll(res.Body)
 		if err != nil {
 			return User{}, tracer.Mask(err)
 		}

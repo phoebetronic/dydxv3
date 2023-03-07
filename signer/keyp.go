@@ -10,8 +10,7 @@ import (
 
 // Keyp derives the Stark key pair for the underlying wallet.
 //
-//     https://docs.dydx.exchange/#derive-starkkey
-//
+//	https://docs.dydx.exchange/#derive-starkkey
 func (s *Signer) Keyp() *private.Key {
 	sig, _ := new(big.Int).SetString(s.Sign("dYdX STARK Key"), 0)
 

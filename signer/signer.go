@@ -9,8 +9,7 @@ import (
 
 // Signer implements all required primitives for dYdX authentication.
 //
-//     https://docs.dydx.exchange/#authentication
-//
+//	https://docs.dydx.exchange/#authentication
 type Signer struct {
 	Cli *http.Client
 	Sig crypto.Signer

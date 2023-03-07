@@ -23,15 +23,14 @@ func init() {
 // coordinates. A string helper like go-ethereum's hexutil may be used to render
 // they key's *big.Int types.
 //
-//     github.com/ethereum/go-ethereum/common/hexutil
+//	github.com/ethereum/go-ethereum/common/hexutil
 //
 // Having created key via private.New enables the caller to further use the
 // generated key pair in hex representation.
 //
-//     stark private key                    hexutil.EncodeBig(key.Pri)
-//     stark public key                     hexutil.EncodeBig(key.Pub.X)
-//     stark public key y coordinate        hexutil.EncodeBig(key.Pub.Y)
-//
+//	stark private key                    hexutil.EncodeBig(key.Pri)
+//	stark public key                     hexutil.EncodeBig(key.Pub.X)
+//	stark public key y coordinate        hexutil.EncodeBig(key.Pub.Y)
 type Key struct {
 	Pri *big.Int
 	Pub *point.Point
