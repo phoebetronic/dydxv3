@@ -84,8 +84,8 @@ github.com/opencontainers/go-digest v1.0.0-rc1 h1:WzifXhOVOEOuFYOJAW6aQqW0TooG2i
 github.com/opencontainers/image-spec v1.0.1 h1:JMemWkRwHx4Zj+fVxWoMCFm/8sYGGrUVojFA6h/TRcI=
 github.com/opencontainers/runc v0.1.1 h1:GlxAyO6x8rfZYN9Tt0Kti5a/cP41iuiO2yYT0IJGY8Y=
 github.com/ory/dockertest v3.3.5+incompatible h1:iLLK6SQwIhcbrG783Dghaaa3WPzGc+4Emza6EbVUUGA=
-github.com/phoebetron/wallet v0.3.0 h1:rjO7MVp3MRk4jBuTPoTbpjv13lXQXVHyUMjVlJWlRSI=
-github.com/phoebetron/wallet v0.3.0/go.mod h1:qxnkC3D88vZ5SmEq93HZUhARX01NctY1DZqV93oFjN4=
+github.com/phoebetronic/wallet v0.3.1 h1:SAP3noIQh872FQ2muwC1tC8EEtoL2K++f9dRiJK3V6k=
+github.com/phoebetronic/wallet v0.3.1/go.mod h1:KaeRS7XDYhH6VMENgNYVCkIrh0c7Wgz/RCez9HJMMBQ=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/prometheus/client_golang v1.14.0 h1:nJdhIvne2eSX/XRAFV9PcvFFRbrjbcTUj0VP62TMhnw=

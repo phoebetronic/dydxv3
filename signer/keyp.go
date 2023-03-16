@@ -5,7 +5,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/math"
 	solsha3 "github.com/miguelmota/go-solidity-sha3"
-	"github.com/phoebetron/dydxv3/starkx/private"
+	"github.com/phoebetronic/dydxv3/starkx/private"
 )
 
 // Keyp derives the Stark key pair for the underlying wallet.

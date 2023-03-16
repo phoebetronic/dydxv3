@@ -3,7 +3,7 @@ package request
 import (
 	"net/http"
 
-	"github.com/phoebetron/dydxv3/client/secret"
+	"github.com/phoebetronic/dydxv3/client/secret"
 )
 
 type Config struct {

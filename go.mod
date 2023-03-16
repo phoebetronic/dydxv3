@@ -1,4 +1,4 @@
-module github.com/phoebetron/dydxv3
+module github.com/phoebetronic/dydxv3
 
 go 1.20
 
@@ -8,7 +8,7 @@ require (
 	github.com/go-numb/go-dydx v0.0.0-20220329194222-4f7ad846fde0
 	github.com/google/go-cmp v0.5.9
 	github.com/miguelmota/go-solidity-sha3 v0.1.1
-	github.com/phoebetron/wallet v0.3.0
+	github.com/phoebetronic/wallet v0.3.1
 	github.com/satori/go.uuid v1.2.0
 	github.com/xh3b4sd/tracer v0.6.0
 	github.com/yanue/starkex v0.0.0-20220816084859-199db002c96f

@@ -3,7 +3,7 @@ package order
 import (
 	"encoding/json"
 
-	"github.com/phoebetron/dydxv3/client/request"
+	"github.com/phoebetronic/dydxv3/client/request"
 	"github.com/xh3b4sd/tracer"
 )
 

@@ -1,9 +1,9 @@
 package public
 
 import (
-	"github.com/phoebetron/dydxv3/client/public/market"
-	"github.com/phoebetron/dydxv3/client/public/orderbook"
-	"github.com/phoebetron/dydxv3/client/public/trade"
+	"github.com/phoebetronic/dydxv3/client/public/market"
+	"github.com/phoebetronic/dydxv3/client/public/orderbook"
+	"github.com/phoebetronic/dydxv3/client/public/trade"
 )
 
 type Public struct {

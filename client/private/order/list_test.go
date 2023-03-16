@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/phoebetron/dydxv3/client/request"
+	"github.com/phoebetronic/dydxv3/client/request"
 )
 
 func Test_Client_Private_Order_List_Request(t *testing.T) {
