@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/ethersphere/bee/pkg/crypto"
-	"github.com/phoebetron/wallet/pkg/wallet"
+	"github.com/phoebetronic/wallet/pkg/wallet"
 )
 
 // Signer implements all required primitives for dYdX authentication.

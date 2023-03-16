@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/phoebetron/dydxv3/starkx/config"
-	"github.com/phoebetron/dydxv3/starkx/point"
+	"github.com/phoebetronic/dydxv3/starkx/config"
+	"github.com/phoebetronic/dydxv3/starkx/point"
 )
 
 var (

@@ -8,9 +8,9 @@ import (
 	"net/http"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/phoebetron/dydxv3/errors"
-	"github.com/phoebetron/dydxv3/signer/user"
-	"github.com/phoebetron/dydxv3/starkx/private"
+	"github.com/phoebetronic/dydxv3/errors"
+	"github.com/phoebetronic/dydxv3/signer/user"
+	"github.com/phoebetronic/dydxv3/starkx/private"
 	"github.com/xh3b4sd/tracer"
 )
 

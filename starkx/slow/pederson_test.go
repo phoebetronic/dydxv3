@@ -7,7 +7,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/google/go-cmp/cmp"
-	"github.com/phoebetron/dydxv3/starkx/point"
+	"github.com/phoebetronic/dydxv3/starkx/point"
 )
 
 func Test_Starkx_Pederson(t *testing.T) {

@@ -1,7 +1,7 @@
 package account
 
 import (
-	"github.com/phoebetron/dydxv3/client/request"
+	"github.com/phoebetronic/dydxv3/client/request"
 	uuid "github.com/satori/go.uuid"
 )
 

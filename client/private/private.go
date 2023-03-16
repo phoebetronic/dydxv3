@@ -1,11 +1,11 @@
 package private
 
 import (
-	"github.com/phoebetron/dydxv3/client/private/account"
-	"github.com/phoebetron/dydxv3/client/private/fill"
-	"github.com/phoebetron/dydxv3/client/private/order"
-	"github.com/phoebetron/dydxv3/client/private/position"
-	"github.com/phoebetron/dydxv3/client/private/user"
+	"github.com/phoebetronic/dydxv3/client/private/account"
+	"github.com/phoebetronic/dydxv3/client/private/fill"
+	"github.com/phoebetronic/dydxv3/client/private/order"
+	"github.com/phoebetronic/dydxv3/client/private/position"
+	"github.com/phoebetronic/dydxv3/client/private/user"
 )
 
 type Private struct {

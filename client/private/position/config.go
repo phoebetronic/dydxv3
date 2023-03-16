@@ -1,7 +1,7 @@
 package position
 
 import (
-	"github.com/phoebetron/dydxv3/client/request"
+	"github.com/phoebetronic/dydxv3/client/request"
 )
 
 type Config struct {

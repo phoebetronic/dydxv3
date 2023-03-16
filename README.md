@@ -17,9 +17,9 @@ import (
 	"fmt"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/phoebetron/dydxv3/signer"
-	"github.com/phoebetron/dydxv3/starkx/private"
-	"github.com/phoebetron/wallet/pkg/wallet"
+	"github.com/phoebetronic/dydxv3/signer"
+	"github.com/phoebetronic/dydxv3/starkx/private"
+	"github.com/phoebetronic/wallet/pkg/wallet"
 )
 
 func main() {
@@ -64,10 +64,10 @@ import (
 	"fmt"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/phoebetron/dydxv3/client/secret"
-	"github.com/phoebetron/dydxv3/signer"
-	"github.com/phoebetron/dydxv3/starkx/private"
-	"github.com/phoebetron/wallet/pkg/wallet"
+	"github.com/phoebetronic/dydxv3/client/secret"
+	"github.com/phoebetronic/dydxv3/signer"
+	"github.com/phoebetronic/dydxv3/starkx/private"
+	"github.com/phoebetronic/wallet/pkg/wallet"
 )
 
 func main() {
@@ -119,9 +119,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/phoebetron/dydxv3/client"
-	"github.com/phoebetron/dydxv3/client/private/account"
-	"github.com/phoebetron/dydxv3/client/secret"
+	"github.com/phoebetronic/dydxv3/client"
+	"github.com/phoebetronic/dydxv3/client/private/account"
+	"github.com/phoebetronic/dydxv3/client/secret"
 )
 
 func main() {
