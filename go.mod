@@ -10,7 +10,7 @@ require (
 	github.com/miguelmota/go-solidity-sha3 v0.1.1
 	github.com/phoebetronic/wallet v0.3.1
 	github.com/satori/go.uuid v1.2.0
-	github.com/xh3b4sd/tracer v0.10.1
+	github.com/xh3b4sd/tracer v0.11.1
 	github.com/yanue/starkex v0.0.0-20220816084859-199db002c96f
 )
 
