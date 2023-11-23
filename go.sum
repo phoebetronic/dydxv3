@@ -151,8 +151,8 @@ github.com/valyala/fasthttp v1.4.0/go.mod h1:4vX61m6KN+xDduDNwXrhIAVZaZaZiQ1luJk
 github.com/valyala/fastjson v1.4.1 h1:hrltpHpIpkaxll8QltMU8c3QZ5+qIiCL8yKqPFJI/yE=
 github.com/valyala/fastjson v1.4.1/go.mod h1:nV6MsjxL2IMJQUoHDIrjEI7oLyeqK6aBD7EFWPsvP8o=
 github.com/valyala/tcplisten v0.0.0-20161114210144-ceec8f93295a/go.mod h1:v3UYOV9WzVtRmSR+PDvWpU/qWl4Wa5LApYYX4ZtKbio=
-github.com/xh3b4sd/tracer v0.10.1 h1:wuzVeQtqYsy51Nkb7P/XavZ8rQYptxxmlM1ivFJ8dXE=
-github.com/xh3b4sd/tracer v0.10.1/go.mod h1:8nRbNXXhSSDmPfyoRRYgwQt/RpzAUH+zNsagP9InH8M=
+github.com/xh3b4sd/tracer v0.11.1 h1:66G8yNkUkyuTRQ586cQMKrBxrD4mQej8mpR9PYoIiGg=
+github.com/xh3b4sd/tracer v0.11.1/go.mod h1:vrAkiLN6hl3VdUeLo71mvqCgUw2TE0YyvzrORa/vHXs=
 github.com/yanue/starkex v0.0.0-20220816084859-199db002c96f h1:EBkD8u6WKxhQHzBWZcy0m2FD01VLOXUzOEtGSXyu7T8=
 github.com/yanue/starkex v0.0.0-20220816084859-199db002c96f/go.mod h1:Owc+hA2CxIsKGVgX6n/KIJtyXxJoAGNcHO+8iyL0J6A=
 go.uber.org/goleak v1.1.12 h1:gZAh5/EyT/HQwlpkCy6wTpqfH9H8Lz8zbm3dZh+OyzA=
